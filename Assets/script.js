@@ -22,7 +22,12 @@ function writePassword(event) {
   var pass_leng = document.getElementById("length").value;
   var password = [];
   var fin_password = "";
-
+  const cb = document.querySelectorAll('input[type=checkbox]:checked');
+ 
+ if (cb.length == 0) {
+  alert("Error: Please select at least 1 character type")
+ }
+ else {
   if (document.getElementById("CapLetter").checked == true) {
     for (let i = 65; i<91; i++) {
       password += String.fromCharCode(i);}}
@@ -38,12 +43,11 @@ function writePassword(event) {
     for (let [from, to] of [[33, 47], [58, 64]])
       for (let i = from; i < to; i++) {
       password += String.fromCharCode(i);}
-  }
+  } 
   for (let i=0; i < pass_leng; i++) {
-  fin_password += (password[Math.floor(Math.random() * password.length)]);
-  }
+    fin_password += (password[Math.floor(Math.random() * password.length)])};
   passwordText.textContent = fin_password;
-}
+} console.log(cb.length)}
 
 function clearform(event) {
   var clear = document.querySelectorAll("input");
@@ -52,5 +56,6 @@ for (let i = 0; i < clear.length; i++) {
   document.getElementById("length").value = "8"
   document.getElementById("results").value = "8"
   passwordText.textContent = document.getElementById("password").ariaPlaceholder;
-  password = [];
-}
+  password = []; }
+
+ 
