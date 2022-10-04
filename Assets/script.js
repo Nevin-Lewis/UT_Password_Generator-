@@ -47,15 +47,11 @@ function writePassword(event) {
   for (let i=0; i < pass_leng; i++) {
     fin_password += (password[Math.floor(Math.random() * password.length)])};
   passwordText.textContent = fin_password;
-} console.log(cb.length)}
+}}
 
 function clearform(event) {
-  var clear = document.querySelectorAll("input");
-for (let i = 0; i < clear.length; i++) {
-  clear[i].checked = false;}
-  document.getElementById("length").value = "8"
-  document.getElementById("results").value = "8"
-  passwordText.textContent = document.getElementById("password").ariaPlaceholder;
+  document.getElementById("My_form").reset(); 
+  passwordText.textContent = document.getElementById("password").Placeholder;
   password = []; }
 
  
