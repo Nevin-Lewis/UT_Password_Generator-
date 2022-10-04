@@ -9,10 +9,11 @@ This was the password generatoro assignment. I did not use a pop-op window for e
 N/A
 
 ## Access
-Follow link --> [https://nevin-lewis.github.io//](https://nevin-lewis.github.io/My_portfolio/)
+Follow link --> https://nevin-lewis.github.io/UT_Password_Generator-/
 ## Photo of my edits
 
-![nevin-lewis github io_My_portfolio_Assets_index2 html](https://user-images.githubusercontent.com/64855834/192432384-fce28556-5e9e-46d2-b601-1564af737401.png)
+![Password_Generator_photo](https://user-images.githubusercontent.com/64855834/193727695-5d89307a-418d-4b19-8611-53bb84d77302.png)
+
 
 ## License 
 MIT. Reference in the repo
